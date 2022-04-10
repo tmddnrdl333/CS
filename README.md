@@ -1,8 +1,8 @@
-DB
 
-[DB]: (./DB/DB.md"	"DB"
 
-sdasf
+![유리](/_img/000.png)
 
-[DB](./DB/DB.md "DB")
+정리
+
+- [DB](./DB/DB.md "DB")
 
