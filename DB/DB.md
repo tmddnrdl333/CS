@@ -701,20 +701,70 @@ key값이 너무 많아져서 int의 범위를 넘어가서... (21억) 그래서
 
 
 
+## 12. NoSQL
+
+Not Only SQL / Not SQL
+
+1. Document DB
+2. Key Value DB
+3. Graph DB
+
+
+
+### (1) Document DB
+
+대표적으로 데이터를 json형태로 저장하는 mongoDB가 있다.
+
+NoSQL이기 때문에, row와 column처럼 정해진 형태로 데이터 기록을 요구하지 않고, 어떤 종류 어떤 모양의 데이터든 저장할 수 있다는 것이 특징.
+
+
+
+### (2) Key Value DB
+
+1. Cassandra DB : column wide database유형으로, 읽고 쓰기가 매우 빠르다는 장점이 있다.
+   - 애플은 카산드라를 이용해 10페타바이트의 데이터를 저장하고 있다고 2014년에 발표한 바 있고, 넷플릭스, 인스타그램, 우버와 같은 회사들도 카산드라를 사용하고 있다.
+
+2. Dynamo DB : 서버리스, 분산된 key value DB로, 아마존이 만들었다.
+   - 듀오링고(언어학습 앱)이 다이나모DB를 사용하는데, 무려 매초 24,000개의 읽기를 지원한다.
+
+> Document DB와 비교했을 때, 상대적으로 얻을 수 있는 데이터의 종류가 제한적이다.
+>
+> (SQL은 얻을 데이터의 종류에 대해 고민하지 않고, 데이터의 구조에 대해서 고민한다고 할 수 있다. 즉, 데이터를 뽑아서 어떻게 할지에 대한 고민은 없다고 볼 수 있다.)
+
+
+
+### (3) Graph DB
+
+column이나 document가 필요 없지만, 각 노드 사이의 관계를 알아야 할 때 사용하는 DB이다. (소셜 네트워크 ex - 페이스북)
+
+1. Tao
+   - 페이스북이 자체적으로 만든 그래프DB. 각각의 entity를 저장하고, 이를 관계망으로 연결한다.
+
+2. neo4j
+   - DB-Engines Ranking에 따르면 가장 대중적인 그래프 데이터베이스이다. 자바로 구현되어있다.
+
+> instagram도 처음에는 PostgreSQL이라는 RDBMS로 시작했지만, 이후 엄청나게 성장하면서 graph DB로 옮기게 되었다.
 
 
 
 
 
 
-저장 프로시저
-
-레디스
-
-NoSQL
 
 
 
-맵엔트리?
 
-트리셋?
+
+
+
+
+
+
+
+# 출처
+
+https://github.com/gyoogle/tech-interview-for-developer
+
+https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Database
+
+https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ
