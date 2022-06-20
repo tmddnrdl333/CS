@@ -747,9 +747,24 @@ column이나 document가 필요 없지만, 각 노드 사이의 관계를 알아
 
 
 
+# 추가
 
+## 06/20
 
+JDBC vs SQL Mapper vs ORM
 
+(테코톡) : https://www.youtube.com/watch?v=VTqqZSuSdOk
+
+- JDBC
+  - DBMS종류 상관없이 하나의 JDBC API로 DB작업을 처리해줌. (각 DBMS는 이를 구현한 JDBC드라이버 제공)
+  - 하지만 불필요한 코드의 반복이 많고, SQLException 처리도 해야되고, 복잡한 구조를 가지고 있음... Connection, Statement, ResultSet를 생성하고 반환하는 작업이 필요해서 번거로움...
+- MyBatis
+  - 코드와 SQL을 분리함 - 관심사의 분리 (sql은 xml에...)
+  - 코드상 분리는 됐지만, 논리적 강한 의존성이 있음.
+- ORM (Object Relational Mapping)
+  - 객체 지향적 접근으로 생산성 증가
+  - 재사용성, 유지보수성 증가
+  - DBMS에 대한 종속성 감소
 
 
 
@@ -768,3 +783,5 @@ https://github.com/gyoogle/tech-interview-for-developer
 https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Database
 
 https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ
+
+https://www.youtube.com/watch?v=VTqqZSuSdOk
